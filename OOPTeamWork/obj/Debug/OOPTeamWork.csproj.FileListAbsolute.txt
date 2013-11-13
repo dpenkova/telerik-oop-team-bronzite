@@ -1,1 +1,2 @@
 c:\users\daniel\documents\visual studio 2012\Projects\OOPTeamWork\OOPTeamWork\bin\Debug\OOPTeamWork.exe.config
+D:\telerik-oop\OOPTeamWork\bin\Debug\OOPTeamWork.exe.config
