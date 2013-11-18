@@ -1,0 +1,6 @@
+D:\ProgramUPR\C#\_OOP\TheButcherCalulatorConsole\TheButcherCalculator\bin\Debug\TheButcherCalculator.exe.config
+D:\ProgramUPR\C#\_OOP\TheButcherCalulatorConsole\TheButcherCalculator\obj\Debug\TheButcherCalculator.csprojResolveAssemblyReference.cache
+D:\ProgramUPR\C#\_OOP\TheButcherCalulatorConsole\TheButcherCalculator\bin\Debug\TheButcherCalculator.exe
+D:\ProgramUPR\C#\_OOP\TheButcherCalulatorConsole\TheButcherCalculator\bin\Debug\TheButcherCalculator.pdb
+D:\ProgramUPR\C#\_OOP\TheButcherCalulatorConsole\TheButcherCalculator\obj\Debug\TheButcherCalculator.exe
+D:\ProgramUPR\C#\_OOP\TheButcherCalulatorConsole\TheButcherCalculator\obj\Debug\TheButcherCalculator.pdb
