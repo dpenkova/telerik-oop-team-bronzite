@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace TheButcherCalculator
+﻿namespace TheButcherCalculator
 {
-    public interface ISeparatable
+    public interface ISeparateable
     {
         //This is the container interface
-        
     }
 }
