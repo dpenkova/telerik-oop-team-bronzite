@@ -25,14 +25,32 @@ namespace TheButcherCalculator
         { 
         }
 
+        // Replaced with the bottom one
+        //public override List<Product> ProduceGoods()
+        //{
+        //    List<Product> goodsProduced = new List<Product>();
+
+        //    goodsProduced.Add(new Product(string.Format("{0} meat", this.GetType().Name), this.MeatWeight));
+        //    goodsProduced.Add(new Product(string.Format("{0} legs", this.GetType().Name), this.LegsWeight));
+        //    goodsProduced.Add(new Product(string.Format("{0} wings", this.GetType().Name), this.WingsWeight));
+        //    goodsProduced.Add(new Product(string.Format("{0} offal weight", this.GetType().Name), this.OffalWeight));
+
+        //    goodsProduced.Add(new Product(string.Format("{0} neck", this.GetType().Name), this.NeckWeight));
+        //    goodsProduced.Add(new Product(string.Format("{0} pate", this.GetType().Name), this.PateWeight));
+
+        //    return goodsProduced;
+        //}
+
+        // using the ProduceGoods() method from the base class
         public override List<Product> ProduceGoods()
         {
             List<Product> goodsProduced = new List<Product>();
+            goodsProduced = base.ProduceGoods();
 
-            goodsProduced.Add(new Product(string.Format("{0} meat", this.GetType().Name), this.MeatWeight));
-            goodsProduced.Add(new Product(string.Format("{0} legs", this.GetType().Name), this.LegsWeight));
-            goodsProduced.Add(new Product(string.Format("{0} wings", this.GetType().Name), this.WingsWeight));
-            goodsProduced.Add(new Product(string.Format("{0} offal weight", this.GetType().Name), this.OffalWeight));
+            foreach (var item in goodsProduced)
+            {
+                item.Name = string.Format("{0} {1}", this.GetType().Name, item.Name);
+            }
 
             goodsProduced.Add(new Product(string.Format("{0} neck", this.GetType().Name), this.NeckWeight));
             goodsProduced.Add(new Product(string.Format("{0} pate", this.GetType().Name), this.PateWeight));

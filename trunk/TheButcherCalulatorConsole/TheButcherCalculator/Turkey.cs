@@ -6,17 +6,11 @@ namespace TheButcherCalculator
 {
     public class Turkey : BirdsCattle
    {
-        private const double NeckPercentage = 0.05; // TODO: think of something else that differs the turkey of other birds and change this
-        private const double PatePercentage = 0.05; // TODO: think of something else that differs the turkey of other birds and change this
+        private const double BackPercentage = 0.1;
 
-        protected double NeckWeight
+        protected double BackWeight
         {
-            get { return this.TotalWeight * NeckPercentage; }
-        }
-
-        protected double PateWeight
-        {
-            get { return this.TotalWeight * PatePercentage; }
+            get { return this.TotalWeight * BackPercentage; }
         }
 
         // constructor
@@ -28,14 +22,14 @@ namespace TheButcherCalculator
         public override List<Product> ProduceGoods()
         {
             List<Product> goodsProduced = new List<Product>();
+            goodsProduced = base.ProduceGoods();
 
-            goodsProduced.Add(new Product(string.Format("{0} meat", this.GetType().Name), this.MeatWeight));
-            goodsProduced.Add(new Product(string.Format("{0} legs", this.GetType().Name), this.LegsWeight));
-            goodsProduced.Add(new Product(string.Format("{0} wings", this.GetType().Name), this.WingsWeight));
-            goodsProduced.Add(new Product(string.Format("{0} offal weight", this.GetType().Name), this.OffalWeight));
+            foreach (var item in goodsProduced)
+            {
+                item.Name = string.Format("{0} {1}", this.GetType().Name, item.Name);
+            }
 
-            goodsProduced.Add(new Product(string.Format("{0} neck", this.GetType().Name), this.NeckWeight));
-            goodsProduced.Add(new Product(string.Format("{0} pate", this.GetType().Name), this.PateWeight));
+            goodsProduced.Add(new Product(string.Format("{0} back", this.GetType().Name), this.BackWeight));
 
             return goodsProduced;
         }
