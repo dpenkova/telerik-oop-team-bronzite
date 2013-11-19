@@ -7,6 +7,6 @@ namespace TheButcherCalculator
 {
     public interface IProductable : ISeparatable
     {
-        List<IProductable> ProduceGoods(Animal animal);
+        List<Product> ProduceGoods();
     }
 }

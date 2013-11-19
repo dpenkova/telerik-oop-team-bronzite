@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="TheButcherCalculator.CalculatorTest" Collapsed="true">
-    <Position X="14.25" Y="3.25" Width="1.5" />
+    <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>CalculatorTest.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheButcherCalculator.Animal">
-    <Position X="2.25" Y="0.5" Width="1.5" />
+    <Position X="8.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAEAAAABAAAAA=</HashCode>
       <FileName>Animal.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheButcherCalculator.FlocksAndHerdsCattle">
-    <Position X="0.5" Y="4" Width="2" />
+    <Position X="3" Y="4.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAAAAAAAAAABAAAAEAAAAAACAAAAAAAAAAAAA=</HashCode>
       <FileName>FlocksAndHerds.cs</FileName>
@@ -23,91 +23,80 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TheButcherCalculator.BirdsCattle">
-    <Position X="5.5" Y="4" Width="1.5" />
+    <Position X="8.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAgAABAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAIAAAAAEAAEAkAAACQIAAAACAAEAgEA=</HashCode>
       <FileName>BirdsCattle.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="TheButcherCalculator.SeaCreatures">
-    <Position X="11" Y="4" Width="1.5" />
+    <Position X="13" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAgAABAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
       <FileName>SeaCreatures.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheButcherCalculator.Pig">
-    <Position X="0.5" Y="7.5" Width="1.75" />
+    <Position X="0.5" Y="7.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>ABAAAABAAAAQAEAEkCAAAAEQAAABAAAAQAAAAQABEAA=</HashCode>
       <FileName>Pig.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheButcherCalculator.Sheep">
-    <Position X="4" Y="7.5" Width="1.5" />
-    <InheritanceLine Type="TheButcherCalculator.FlocksAndHerdsCattle" ManuallyRouted="true">
-      <Path>
-        <Point X="1.5" Y="6.261" />
-        <Point X="1.5" Y="6.343" />
-        <Point X="0.979" Y="6.343" />
-        <Point X="0.979" Y="6.51" />
-        <Point X="1.417" Y="6.51" Type="JumpStart" />
-        <Point X="1.583" Y="6.51" Type="JumpEnd" />
-        <Point X="4.75" Y="6.51" />
-        <Point X="4.75" Y="7.5" />
-      </Path>
-    </InheritanceLine>
+    <Position X="3.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Sheep.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheButcherCalculator.Chicken">
-    <Position X="5.75" Y="7" Width="1.5" />
+    <Position X="6.25" Y="10.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAEAECAAAAAAAACAEAAAAAA=</HashCode>
       <FileName>Chicken.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheButcherCalculator.Duck">
-    <Position X="7.5" Y="7" Width="1.5" />
+    <Position X="8.25" Y="10.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAECEAAAAAIAIAAAAAAAAAA=</HashCode>
       <FileName>Duck.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheButcherCalculator.Turkey">
-    <Position X="9.25" Y="7" Width="1.5" />
+    <Position X="10" Y="10.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAECEAAAAAIAIAAAAAAAAAA=</HashCode>
       <FileName>Turkey.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheButcherCalculator.Fish">
-    <Position X="11.75" Y="7" Width="1.5" />
+    <Position X="12" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>Fish.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheButcherCalculator.OtherSeaCreatures">
-    <Position X="13.75" Y="7" Width="1.5" />
+    <Position X="14.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>OtherSeaCreatures.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheButcherCalculator.Product">
-    <Position X="6.75" Y="0.5" Width="1.5" />
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAEAAAABABAAAAAQAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAABABAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Product.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheButcherCalculator.Cow" Collapsed="true">
-    <Position X="2.5" Y="7.5" Width="1.5" />
+    <Position X="5" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAAAAAAAAAAAAAACAAAAEAAAAAAAAAAAAAAQAAEAA=</HashCode>
+      <HashCode>ABAAAAAAAAAAAAAEgCAAAAEAAAAAAAAAAAAAAQAAEAA=</HashCode>
       <FileName>Cow.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -129,7 +118,7 @@
     <Position X="13" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ISeparateable.cs</FileName>
+      <FileName>ISeparatable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

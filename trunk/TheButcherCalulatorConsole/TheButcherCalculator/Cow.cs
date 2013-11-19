@@ -16,7 +16,7 @@ namespace TheButcherCalculator
 
         //calculating weight of products by piece;
         //methods
-        public override List<IProductable> ProduceGoods(Animal animal)
+        public override List<Product> ProduceGoods()
         {
             //porkProducts.Add(MeetAmount);
             return null;
