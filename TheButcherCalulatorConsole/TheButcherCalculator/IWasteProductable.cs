@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TheButcherCalculator
 {
-    public interface IWasteProductable : ISeparatable
+    public interface IWasteProductable : ISeparateable
     {
         List<Product> ProduceWaste();
     }

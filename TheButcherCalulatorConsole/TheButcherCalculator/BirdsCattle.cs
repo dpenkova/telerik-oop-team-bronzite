@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace TheButcherCalculator
 {
-    public abstract class BirdsCattle : Animal, ISeparatable
+    public abstract class BirdsCattle : Animal, ISeparateable
     {
         // constants for percentage
         private const double MeatPercentage = 0.3;
