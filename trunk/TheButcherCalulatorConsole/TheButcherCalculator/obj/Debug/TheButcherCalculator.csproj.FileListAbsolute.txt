@@ -10,3 +10,6 @@ E:\Telelik Academy\SVN_GoogleCode\OOP_TeamProject\TheButcherCalulatorConsole\The
 E:\Telelik Academy\SVN_GoogleCode\OOP_TeamProject\TheButcherCalulatorConsole\TheButcherCalculator\bin\Debug\TheButcherCalculator.exe
 E:\Telelik Academy\SVN_GoogleCode\OOP_TeamProject\TheButcherCalulatorConsole\TheButcherCalculator\bin\Debug\TheButcherCalculator.pdb
 E:\Telelik Academy\SVN_GoogleCode\OOP_TeamProject\TheButcherCalulatorConsole\TheButcherCalculator\obj\Debug\TheButcherCalculator.csprojResolveAssemblyReference.cache
+D:\ProgramUPR\C#\_OOP\_ForTEAMWORK\TheButcherCalulatorConsole\TheButcherCalculator\bin\Debug\TheButcherCalculator.exe.config
+D:\ProgramUPR\C#\_OOP\_ForTEAMWORK\TheButcherCalulatorConsole\TheButcherCalculator\obj\Debug\TheButcherCalculator.exe
+D:\ProgramUPR\C#\_OOP\_ForTEAMWORK\TheButcherCalulatorConsole\TheButcherCalculator\obj\Debug\TheButcherCalculator.pdb
