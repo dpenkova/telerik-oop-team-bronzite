@@ -114,11 +114,11 @@
       <FileName>IWasteProductable.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="TheButcherCalculator.ISeparatable" Collapsed="true">
+  <Interface Name="TheButcherCalculator.ISeparateable" Collapsed="true">
     <Position X="13" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ISeparatable.cs</FileName>
+      <FileName>ISeparateable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

@@ -14,15 +14,15 @@ namespace TheButcherCalculator
             //Console.WriteLine(test2.ToString());
             
             // Test the lists of produced Goods and Waste for BirddsCattle
-            BirdsCattle someDuck = new Duck("Duck", 15);
-            BirdsCattle someChicken = new Chicken("Duck", 10);
+            BirdsCattle someDuck = new Duck("Duck", 4);
+            BirdsCattle someChicken = new Chicken("Duck", 2);
 
             List<BirdsCattle> inputList = new List<BirdsCattle>();
 
             inputList.Add(someChicken);
             inputList.Add(someDuck);
-            inputList.Add(new Turkey("Turkey", 20));
-            inputList.Add(new Turkey("Turkey", 20));
+            inputList.Add(new Turkey("Turkey", 6));
+            inputList.Add(new Turkey("Turkey", 5));
 
 
             List<Product> goods = new List<Product>();
