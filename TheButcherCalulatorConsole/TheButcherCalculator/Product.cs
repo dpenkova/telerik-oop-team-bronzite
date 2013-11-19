@@ -7,42 +7,19 @@ namespace TheButcherCalculator
 {
     public class Product
     {
-        private string name;
-        private int productWeight;
-        private int kind;
+        public string Name { get; set; }
+        public double ProductWeight { get; set; }
+        public string Kind { get; set; }
 
-        public string Name
+        public Product(string productName, double productWeight)
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            this.Name = productName;
+            this.ProductWeight = productWeight;
         }
 
-        public double ProductWeight
+        public Product()
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
 
-        public int Kind
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
         }
-
     }
 }

@@ -51,7 +51,7 @@ namespace TheButcherCalculator
 	    }
 
         //methods
-        public override List<IProductable> ProduceGoods(Animal animal)
+        public override List<Product> ProduceGoods()
         {
             //porkProducts.Add(MeetAmount);
             return null;

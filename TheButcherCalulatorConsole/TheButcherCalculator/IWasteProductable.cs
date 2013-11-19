@@ -7,6 +7,6 @@ namespace TheButcherCalculator
 {
     public interface IWasteProductable : ISeparatable
     {
-        void ProduceWaste();
+        List<Product> ProduceWaste();
     }
 }

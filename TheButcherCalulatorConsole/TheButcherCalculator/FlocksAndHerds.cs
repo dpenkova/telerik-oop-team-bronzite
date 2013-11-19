@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TheButcherCalculator
 {
-    public abstract class FlocksAndHerdsCattle : Animal,IProductable
+    public abstract class FlocksAndHerdsCattle : Animal, IProductable
     {
         //properties
         //karantiq
@@ -20,7 +20,7 @@ namespace TheButcherCalculator
         { 
         }
 
-        public abstract List<IProductable> ProduceGoods(Animal animal);
+        public abstract List<Product> ProduceGoods();
         
     }
 }
