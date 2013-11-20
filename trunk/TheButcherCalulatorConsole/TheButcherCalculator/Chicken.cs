@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace TheButcherCalculator
 {
@@ -34,7 +33,7 @@ namespace TheButcherCalculator
         }
 
         // constructor
-        public Chicken(string animalKind, int totalWeight)
+        public Chicken(string animalKind, double totalWeight)
             :base(animalKind, totalWeight)
         { 
         }

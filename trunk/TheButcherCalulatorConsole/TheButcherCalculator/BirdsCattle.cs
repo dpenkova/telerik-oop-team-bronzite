@@ -35,7 +35,7 @@ namespace TheButcherCalculator
         }
 
         //constructor
-        protected BirdsCattle(string kind, int totalWeight)
+        protected BirdsCattle(string kind, double totalWeight)
             : base(kind, totalWeight)
         {
         }
