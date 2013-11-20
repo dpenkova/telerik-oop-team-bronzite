@@ -8,10 +8,6 @@ namespace TheButcherCalculator
     {
         static void Main()
         {
-            //Pig test = new Pig("Pig", 300);
-            //Console.WriteLine(test.ToString());
-            //Cow test2 = new Cow("Cow", 500);
-            //Console.WriteLine(test2.ToString());
             
             // Test the lists of produced Goods and Waste for BirddsCattle
             BirdsCattle someDuck = new Duck("Duck", 4);
@@ -82,6 +78,55 @@ namespace TheButcherCalculator
             {
                 Console.WriteLine(string.Format("{0}: {1} kg.", pr.Name, pr.ProductWeight));
             }
+
+            //Test FlocksAndHerds produced waste and goods
+            List<FlocksAndHerdsCattle> inputL = new List<FlocksAndHerdsCattle>();
+            inputL.Add(new Cow("Sivushka",500));
+            inputL.Add(new Pig("Guci", 300));
+            inputL.Add(new Sheep("Vakla", 70));
+            inputL.Add(new Pig("Pencho", 70));
+
+            goods.Clear();
+            waste.Clear();
+
+            foreach (var animal in inputL)
+            {
+                goods.AddRange(animal.ProduceGoods());
+                waste.AddRange(animal.ProduceWaste());
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("------FlocksAndHerdsCattleTest--------");
+            Console.WriteLine();
+            Console.WriteLine("Produced goods:");
+
+            var sumSimularGoods = goods
+                .GroupBy(pr => pr.Name.ToString())
+                .Select(i => new Product()
+                {
+                    Name = i.Key,
+                    ProductWeight = i.Sum(x => x.ProductWeight)
+                })
+                .ToList();
+            foreach (var item in sumSimularGoods)
+            {
+                Console.WriteLine("{0} {1} kg",item.Name, item.ProductWeight);  
+            }
+            Console.WriteLine("Produced waste:");
+            var sumSimularWaste = waste
+                .GroupBy(pr => pr.Name.ToString())
+                .Select(i => new Product()
+                {
+                    Name = i.Key,
+                    ProductWeight = i.Sum(x => x.ProductWeight)
+                })
+                .ToList();
+            foreach (var item in sumSimularWaste)
+            {
+                Console.WriteLine("{0} {1} kg", item.Name, item.ProductWeight);
+            }
+
+
 
             // Another way that returns List of object[]
             //var sumGoods = goods
