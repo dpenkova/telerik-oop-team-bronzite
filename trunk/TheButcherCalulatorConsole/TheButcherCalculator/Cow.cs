@@ -8,54 +8,48 @@ namespace TheButcherCalculator
     public class Cow : FlocksAndHerdsCattle
     {
         //here we set percent constant to calculate weight of different products
-
-        private const double MeatWeightPercentage = 0.35;       //35%
+        private const double MeatWeightPercentage = 0.30;       //30%
         private const double WasteWeightPercentage = 0.20;      //20%
         private const double OffalWeightPercentage = 0.10;      //10%
-        private const double RoundMeаtWeightPercentage = 0.35;  //25%
+        private const double RoundMeаtWeightPercentage = 0.40;  //45%
 
-        //calculating weight of products by piece;
-        //methods
-        public override List<Product> ProduceGoods()
-        {
-            //porkProducts.Add(MeetAmount);
-            return null;
-        }
+        //Properties
         public double WasteAmount
         {
             get { return WasteWeightPercentage * TotalWeight; }
         }
-
+        public override double MeatAmount
+        {
+            get { return MeatWeightPercentage * TotalWeight; }
+        }
+        public override double OffalAmount
+        {
+            get { return OffalWeightPercentage * TotalWeight; }
+        }
+        public override double RoundMeatAmount
+        {
+            get { return RoundMeаtWeightPercentage * TotalWeight; }
+        }
         //constructor
         public Cow(string kind, int totalWeight)
             : base(kind, totalWeight)
         {
-
-            base.MeatAmount = MeatWeightPercentage * totalWeight;
-            base.OffalAmount = OffalWeightPercentage * totalWeight;
-            base.RoundMeat = RoundMeаtWeightPercentage * totalWeight;
         }
-
-        public override string ToString()
+        //methods
+        public override List<Product> ProduceGoods()
         {
-            StringBuilder sb = new StringBuilder();
-                
-            sb.Append("Beef products by kg:");
-            sb.Append("-----------------------------");
-            sb.Append(Environment.NewLine);
-            sb.Append("Meаt amount - " + MeatAmount + " kg");
-            sb.Append(Environment.NewLine);
-            sb.Append("Offal amount - " + OffalAmount + " kg");
-            sb.Append(Environment.NewLine);
-            sb.Append("RoundMeаt amount - " + RoundMeat + " kg");
-            sb.Append(Environment.NewLine);
-            sb.Append("Waste amount - " + WasteAmount + " kg");
-            sb.Append(Environment.NewLine);
-            sb.Append(Environment.NewLine);
-
-            return sb.ToString();
-
+            List<Product> collector = new List<Product>();
+            collector.Add(new Product(string.Format("{0} meat - ",this.GetType().Name),this.MeatAmount));
+            collector.Add(new Product(string.Format("{0} round meat - ", this.GetType().Name), this.RoundMeatAmount));
+            collector.Add(new Product(string.Format("{0} offal - ", this.GetType().Name), this.OffalAmount));
+           
+            return collector;
         }
-
+        public override List<Product>ProduceWaste()
+        {
+             List<Product> collectorW = new List<Product>();
+            collectorW.Add(new Product(string.Format("{0} waste - ",this.GetType().Name),this.WasteAmount));
+            return collectorW;
+        }
     }
 }

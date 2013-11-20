@@ -15,19 +15,11 @@ namespace TheButcherCalculator
         private const double OffalWeightPercentage = 0.10;      //10%
         private const double RoundMeаtWeightPercentage = 0.25;  //25%
 
-        //calculating weight of products by piece;
-        private const int Legs = 4;
-        private const int PigEars = 2;      //TODO Un hardcode this
-        private const int Pigtail= 1;
-        
-        //products list-unused!!
-        private IList<IProductable> porkProducts;
-
-        public IEnumerable<IProductable> PorkProducts
-        {
-            get { return this.porkProducts; }
-        }
-
+        ////calculating weight of products by piece;
+        //private const int Legs = 4;
+        //private const int PigEars = 2;      //TODO Un hardcode this
+        //private const int Pigtail= 1;
+        //properties
         public double CommonWeightOfProductByPieceForOneAnimal
         {
             get { return ProductByPieceWeightPercentage * TotalWeight; }
@@ -40,53 +32,42 @@ namespace TheButcherCalculator
         {
             get { return WasteWeightPercentage * TotalWeight; }
         }
-        
+        public override double MeatAmount
+        {
+            get { return MeаtWeightPercentage * TotalWeight; }
+        }
+        public override double OffalAmount
+        {
+            get { return OffalWeightPercentage * TotalWeight; }
+        }
+        public override double RoundMeatAmount
+        {
+            get { return RoundMeаtWeightPercentage * TotalWeight; }
+        }
+
+        //ctor
         public Pig (string kind, int totalWeight):base(kind, totalWeight)
 	    {
-            base.MeatAmount = MeаtWeightPercentage * totalWeight;
-            base.OffalAmount = OffalWeightPercentage * totalWeight;
-            base.RoundMeat = RoundMeаtWeightPercentage * totalWeight;
-
-            this.porkProducts = new List<IProductable>();
 	    }
 
         //methods
         public override List<Product> ProduceGoods()
         {
-            //porkProducts.Add(MeetAmount);
-            return null;
-        }
-        public override string ToString()
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.Append("Pig products by piece :");
-            sb.Append("-----------------------------");
-            sb.Append(Environment.NewLine);
-            sb.Append("Legs - " + Legs + "pieces");
-            sb.Append(Environment.NewLine);
-            sb.Append("PigEars - " + PigEars + " pieces");
-            sb.Append(Environment.NewLine);
-            sb.Append("PigTail - " + Pigtail + " pieces");
-            sb.Append(Environment.NewLine);
-            sb.Append("CommonWeigth ProductsByWeight - " + CommonWeightOfProductByPieceForOneAnimal + " kg");
-            sb.Append(Environment.NewLine);
-            sb.Append(Environment.NewLine);
-            sb.Append("Pig products by kg:");
-            sb.Append("-----------------------------");
-            sb.Append(Environment.NewLine);
-            sb.Append("Meаt amount - "+ MeatAmount+" kg");
-            sb.Append(Environment.NewLine);
-            sb.Append("Bacon amount - " + BaconWeight + " kg");
-            sb.Append(Environment.NewLine);
-            sb.Append("Offal amount - " + OffalAmount + " kg");
-            sb.Append(Environment.NewLine);
-            sb.Append("RoundMeаt amount - " + RoundMeat + " kg");
-            sb.Append(Environment.NewLine);
-            sb.Append("Waste amount - " + WasteAmount  + " kg");
-            sb.Append(Environment.NewLine);
-            sb.Append(Environment.NewLine);
+            List<Product> collector = new List<Product>();
+            collector.Add(new Product(string.Format("{0} meat - ",this.GetType().Name),this.MeatAmount));
+            collector.Add(new Product(string.Format("{0} bacon - ", this.GetType().Name), this.BaconWeight));
+            collector.Add(new Product(string.Format("{0} round meat - ", this.GetType().Name), this.RoundMeatAmount));
+            collector.Add(new Product(string.Format("{0} offal - ", this.GetType().Name), this.OffalAmount));
+            collector.Add(new Product(string.Format("{0} product saled by piece common weight - ", this.GetType().Name), this.CommonWeightOfProductByPieceForOneAnimal));
 
-            return sb.ToString();
+            return collector;
         }
+        public override List<Product>ProduceWaste()
+        {
+             List<Product> collectorW = new List<Product>();
+            collectorW.Add(new Product(string.Format("{0} waste - ",this.GetType().Name),this.WasteAmount));
+            return collectorW;
+        }
+
     }
 }
