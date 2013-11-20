@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TheButcherCalculator
 {
-    public interface IProductable : ISeparateable
+    public interface IProductable 
     {
         List<Product> ProduceGoods();
     }
