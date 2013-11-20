@@ -14,7 +14,7 @@ namespace TheButcherCalculator
         }
 
         // constructor
-        public Turkey(string animalKind, int totalWeight)
+        public Turkey(string animalKind, double totalWeight)
             :base(animalKind, totalWeight)
         { 
         }
@@ -28,7 +28,7 @@ namespace TheButcherCalculator
             {
                 item.Name = string.Format("{0} {1}", this.GetType().Name, item.Name);
             }
-
+      
             goodsProduced.Add(new Product(string.Format("{0} back", this.GetType().Name), this.BackWeight));
 
             return goodsProduced;

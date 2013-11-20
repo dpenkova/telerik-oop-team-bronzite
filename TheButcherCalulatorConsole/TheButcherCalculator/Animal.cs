@@ -36,7 +36,7 @@ namespace TheButcherCalculator
             }
         }
         //constructors
-        protected Animal(string kind, int totalWeight)
+        protected Animal(string kind, double totalWeight)
         {
             this.Kind = kind;
             this.TotalWeight = totalWeight;

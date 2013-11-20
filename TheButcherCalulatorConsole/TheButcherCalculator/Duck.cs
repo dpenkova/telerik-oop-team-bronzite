@@ -20,7 +20,7 @@ namespace TheButcherCalculator
         }
 
         // constructor
-        public Duck(string animalKind, int totalWeight)
+        public Duck(string animalKind, double totalWeight)
             :base(animalKind, totalWeight)
         { 
         }
