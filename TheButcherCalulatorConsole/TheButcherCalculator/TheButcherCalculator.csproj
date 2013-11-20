@@ -49,7 +49,7 @@
     <Compile Include="Duck.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="Fish.cs" />
-    <Compile Include="OtherSeaCreatures.cs" />
+    <Compile Include="Crab.cs" />
     <Compile Include="Pig.cs" />
     <Compile Include="FlocksAndHerds.cs" />
     <Compile Include="IProductable.cs" />
