@@ -4,6 +4,11 @@ D:\ProgramUPR\C#\_OOP\TheButcherCalulatorConsole\TheButcherCalculator\bin\Debug\
 D:\ProgramUPR\C#\_OOP\TheButcherCalulatorConsole\TheButcherCalculator\bin\Debug\TheButcherCalculator.pdb
 D:\ProgramUPR\C#\_OOP\TheButcherCalulatorConsole\TheButcherCalculator\obj\Debug\TheButcherCalculator.exe
 D:\ProgramUPR\C#\_OOP\TheButcherCalulatorConsole\TheButcherCalculator\obj\Debug\TheButcherCalculator.pdb
+<<<<<<< .mine
+E:\Telerik\klanicawc\TheButcherCalulatorConsole\TheButcherCalculator\bin\Debug\TheButcherCalculator.exe.config
+E:\Telerik\klanicawc\TheButcherCalulatorConsole\TheButcherCalculator\obj\Debug\TheButcherCalculator.exe
+E:\Telerik\klanicawc\TheButcherCalulatorConsole\TheButcherCalculator\obj\Debug\TheButcherCalculator.pdb
+=======
 E:\Telelik Academy\SVN_GoogleCode\OOP_TeamProject\TheButcherCalulatorConsole\TheButcherCalculator\bin\Debug\TheButcherCalculator.exe.config
 E:\Telelik Academy\SVN_GoogleCode\OOP_TeamProject\TheButcherCalulatorConsole\TheButcherCalculator\obj\Debug\TheButcherCalculator.exe
 E:\Telelik Academy\SVN_GoogleCode\OOP_TeamProject\TheButcherCalulatorConsole\TheButcherCalculator\obj\Debug\TheButcherCalculator.pdb
@@ -16,3 +21,4 @@ D:\ProgramUPR\C#\_OOP\_ForTEAMWORK\TheButcherCalulatorConsole\TheButcherCalculat
 D:\ProgramUPR\C#\_OOP\_ForTEAMWORK\TheButcherCalulatorConsole\TheButcherCalculator\bin\Debug\TheButcherCalculator.exe
 D:\ProgramUPR\C#\_OOP\_ForTEAMWORK\TheButcherCalulatorConsole\TheButcherCalculator\bin\Debug\TheButcherCalculator.pdb
 D:\ProgramUPR\C#\_OOP\_ForTEAMWORK\TheButcherCalulatorConsole\TheButcherCalculator\obj\Debug\TheButcherCalculator.csprojResolveAssemblyReference.cache
+>>>>>>> .r20
