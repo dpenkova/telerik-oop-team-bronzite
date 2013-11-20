@@ -9,9 +9,9 @@ namespace TheButcherCalculator
         // constants for percentage
         private const double BreastPercentage = 0.3;    // Гърди - 30%
         private const double LegsPercentage = 0.3;      // Бутчета - 30%
-        private const double WingsPercentage = 0.1;     // Крила - 10%
+        private const double WingsPercentage = 0.15;     // Крила - 10%
         private const double OffalPercentage = 0.1;     // Карантия - 10%
-        private const double WastePercentage = 0.1;     // Отпадъци - 10%
+        private const double WastePercentage = 0.05;     // Отпадъци - 10%
 
         protected double BreastWeight
         {
@@ -48,7 +48,7 @@ namespace TheButcherCalculator
             goodsProduced.Add(new Product("breast", this.BreastWeight));
             goodsProduced.Add(new Product("legs", this.LegsWeight));
             goodsProduced.Add(new Product("wings", this.WingsWeight));
-            goodsProduced.Add(new Product("offal weight", this.OffalWeight));
+            goodsProduced.Add(new Product("offal", this.OffalWeight));
 
             return goodsProduced;
         }
