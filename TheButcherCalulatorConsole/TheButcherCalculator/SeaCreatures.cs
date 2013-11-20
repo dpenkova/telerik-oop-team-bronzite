@@ -5,14 +5,11 @@ using System.Text;
 
 namespace TheButcherCalculator
 {
-    public abstract class SeaCreatures : Animal//,IProductable 
+    public abstract class SeaCreatures : Animal, ISeparateable 
     {
         //properties
         //karantiq
-        public virtual double OffalAmount { get; protected set; }
-        //but
-        public virtual double RoundMeet { get; protected set; }
-
+        public virtual double OffalAmount { get; protected set; }       
         public virtual double MeetAmount { get; protected set; }
 
         //constructor
@@ -21,6 +18,8 @@ namespace TheButcherCalculator
         { 
         }
 
-        //public abstract void ProduceGoods();
+        public abstract List<Product> ProduceGoods();
+        public abstract List<Product> ProduceWaste();
+
     }
 }
