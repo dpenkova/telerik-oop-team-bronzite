@@ -42,5 +42,10 @@ namespace TheButcherCalculator
             this.Kind = kind;
             this.TotalWeight = totalWeight;
         }
+
+        protected Animal()
+        {
+ 
+        }
     }
 }
