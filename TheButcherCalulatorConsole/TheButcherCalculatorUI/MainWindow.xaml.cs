@@ -31,35 +31,54 @@ namespace TheButcherCalculatorUI
 
         private void OnAddButtonClick(object sender, RoutedEventArgs e)
         {
-            object classAndKind = this.ComboBoxAnimal.SelectedValue; 
-            AnimalClass convertedClassAndKind = (AnimalClass)classAndKind; //if ADD button is pressed on nonselectedAnimal - program crashes
-            string nmespace = classAndKind.GetType().Namespace;
-            object assembly = classAndKind.GetType().Assembly;
-            string name = string.Format("{0}.{1}, {2}", nmespace, convertedClassAndKind.ToString(), assembly.ToString());
+            object classAndKind = this.ComboBoxAnimal.SelectedValue;
 
-            double weightValue = double.Parse(this.TextBoxWeight.Text); // if weight is not input - program crashes
+            if (this.ComboBoxAnimal.SelectedValue == null || this.TextBoxWeight.Text == string.Empty)
+            {
+                if (this.ComboBoxAnimal.SelectedValue == null && this.TextBoxWeight.Text == string.Empty)
+                {
+                    MessageBox.Show("Choose an animal and input weight");
+                }
+                else if (this.ComboBoxAnimal.SelectedValue == null)
+                {
+                    MessageBox.Show("Choose an animal");
+                }
+                else
+                {
+                    MessageBox.Show(string.Format("Input {0}'s weight", this.ComboBoxAnimal.SelectedValue));
+                }
+            }
+            else
+            {
+                AnimalClass convertedClassAndKind = (AnimalClass)classAndKind; //if ADD button is pressed on nonselectedAnimal - program crashes
+                string nmespace = classAndKind.GetType().Namespace;
+                object assembly = classAndKind.GetType().Assembly;
+                string name = string.Format("{0}.{1}, {2}", nmespace, convertedClassAndKind.ToString(), assembly.ToString());
 
-            // Get the type contained in the name string
-            Type type = Type.GetType(name, true); // name should be a string of AssemblyQualifiedName
+                double weightValue = double.Parse(this.TextBoxWeight.Text); // if weight is not input - program crashes
 
-            // create an instance of that type
-            object instance = Activator.CreateInstance(type); // All animals should have an empty constructor to be created this way
+                // Get the type contained in the name string
+                Type type = Type.GetType(name, true); // name should be a string of AssemblyQualifiedName
 
-            (instance as Animal).TotalWeight = weightValue;
-            (instance as Animal).Kind = convertedClassAndKind.ToString();
+                // create an instance of that type
+                object instance = Activator.CreateInstance(type); // All animals should have an empty constructor to be created this way
 
-            mainProcessor.InputList.Add(instance as ISeparateable);
+                (instance as Animal).TotalWeight = weightValue;
+                (instance as Animal).Kind = convertedClassAndKind.ToString();
 
-            this.TextBoxWeight.Text = null;
+                mainProcessor.InputList.Add(instance as ISeparateable);
 
-            this.ComboBoxAnimal.Text = "-- Select another Animal --";
+                this.TextBoxWeight.Text = null;
+
+                this.ComboBoxAnimal.Text = "-- Select another Animal --";
 
 
-            //this.ListBoxInput.Items.Refresh();   // this is not working!!!
+                //this.ListBoxInput.Items.Refresh();   // this is not working!!!
 
-            // Refreshing the list the dummy way but it works
-            this.ListBoxInput.ItemsSource = null;
-            this.ListBoxInput.ItemsSource = mainProcessor.InputList;
+                // Refreshing the list the dummy way but it works
+                this.ListBoxInput.ItemsSource = null;
+                this.ListBoxInput.ItemsSource = mainProcessor.InputList;
+            }
         }
 
         private void OnCalculateButtonClick(object sender, RoutedEventArgs e)
