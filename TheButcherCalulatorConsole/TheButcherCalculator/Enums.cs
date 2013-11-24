@@ -1,14 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TheButcherCalculator
 {
-    public enum PorkProductByPiece
+    public enum AnimalClass
     {
-        //still unused
-        Leg,Ear,Tail
+        Pig = 6,
+        Sheep = 8,
+        Cow = 2,
+        Chicken = 1,
+        Duck = 4,
+        Turkey = 7,
+        Fish = 5,
+        Crab = 3,
     }
 }
