@@ -36,25 +36,30 @@ namespace TheButcherCalculator
             get { return WasteWeightPercentage * TotalWeight; }
         }
         //constructor
-        public Sheep(string kind, int totalWeight)
+        public Sheep(string kind, double totalWeight)
             : base(kind, totalWeight)
         {
         }
+
+        public Sheep()
+        { 
+        }
+
         //methods
         public override List<Product> ProduceGoods()
         {
             List<Product> collector = new List<Product>();
-            collector.Add(new Product(string.Format("{0} head - ", this.GetType().Name), this.SheepHeadWeight));
-            collector.Add(new Product(string.Format("{0} meat - ",this.GetType().Name),this.MeatAmount));
-            collector.Add(new Product(string.Format("{0} round meat - ", this.GetType().Name), this.RoundMeatAmount));
-            collector.Add(new Product(string.Format("{0} offal - ", this.GetType().Name), this.OffalAmount));
+            collector.Add(new Product(string.Format("{0} head", this.GetType().Name), this.SheepHeadWeight));
+            collector.Add(new Product(string.Format("{0} meat",this.GetType().Name),this.MeatAmount));
+            collector.Add(new Product(string.Format("{0} round meat", this.GetType().Name), this.RoundMeatAmount));
+            collector.Add(new Product(string.Format("{0} offal", this.GetType().Name), this.OffalAmount));
            
             return collector;
         }
         public override List<Product>ProduceWaste()
         {
              List<Product> collectorW = new List<Product>();
-            collectorW.Add(new Product(string.Format("{0} waste - ",this.GetType().Name),this.WasteAmount));
+            collectorW.Add(new Product(string.Format("{0} waste",this.GetType().Name),this.WasteAmount));
             return collectorW;
         }
         

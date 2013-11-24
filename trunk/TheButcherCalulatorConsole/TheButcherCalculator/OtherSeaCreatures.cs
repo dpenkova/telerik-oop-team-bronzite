@@ -12,5 +12,16 @@ namespace TheButcherCalculator
         {
             
         }
+        public override List<Product> ProduceGoods()
+        {
+            // TODO: Implement this method
+            throw new NotImplementedException();
+        }
+
+        public override List<Product> ProduceWaste()
+        {
+            // TODO: Implement this method
+            throw new NotImplementedException();
+        }
     }
 }

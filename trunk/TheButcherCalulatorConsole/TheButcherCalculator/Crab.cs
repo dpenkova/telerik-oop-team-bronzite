@@ -26,9 +26,14 @@ namespace TheButcherCalculator
 
         //constructor
 
-        public Crab(string kind,int totalWeight):base(kind, totalWeight)
+        public Crab(string kind, double totalWeight)
+            :base(kind, totalWeight)
         {
            
+        }
+
+        public Crab()
+        { 
         }
 
         public override List<Product> ProduceGoods()

@@ -19,6 +19,10 @@ namespace TheButcherCalculator
         { 
         }
 
+        public Turkey()
+        { 
+        }
+
         public override List<Product> ProduceGoods()
         {
             List<Product> goodsProduced = new List<Product>();

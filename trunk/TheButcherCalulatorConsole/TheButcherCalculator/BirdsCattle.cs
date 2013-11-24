@@ -40,6 +40,10 @@ namespace TheButcherCalculator
         {
         }
 
+        protected BirdsCattle()
+        { 
+        }
+
         //public abstract List<Product> ProduceGoods();
         public virtual List<Product> ProduceGoods()
         {

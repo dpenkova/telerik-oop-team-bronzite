@@ -25,6 +25,10 @@ namespace TheButcherCalculator
         { 
         }
 
+        public Duck()
+        { 
+        }
+
         // Replaced with the bottom one
         //public override List<Product> ProduceGoods()
         //{

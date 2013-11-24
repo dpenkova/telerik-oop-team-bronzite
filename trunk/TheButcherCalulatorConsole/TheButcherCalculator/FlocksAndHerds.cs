@@ -16,7 +16,12 @@ namespace TheButcherCalculator
         public virtual double MeatAmount { get; protected set; }
 
         //constructor
-        protected FlocksAndHerdsCattle(string kind, int totalWeight):base(kind, totalWeight)
+        protected FlocksAndHerdsCattle(string kind, double totalWeight)
+            :base(kind, totalWeight)
+        { 
+        }
+
+        protected FlocksAndHerdsCattle()
         { 
         }
 
