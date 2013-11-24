@@ -46,26 +46,30 @@ namespace TheButcherCalculator
         }
 
         //ctor
-        public Pig (string kind, int totalWeight):base(kind, totalWeight)
+        public Pig (string kind, double totalWeight):base(kind, totalWeight)
 	    {
 	    }
+
+        public Pig()
+        { 
+        }
 
         //methods
         public override List<Product> ProduceGoods()
         {
             List<Product> collector = new List<Product>();
-            collector.Add(new Product(string.Format("{0} meat - ",this.GetType().Name),this.MeatAmount));
-            collector.Add(new Product(string.Format("{0} bacon - ", this.GetType().Name), this.BaconWeight));
-            collector.Add(new Product(string.Format("{0} round meat - ", this.GetType().Name), this.RoundMeatAmount));
-            collector.Add(new Product(string.Format("{0} offal - ", this.GetType().Name), this.OffalAmount));
-            collector.Add(new Product(string.Format("{0} product saled by piece common weight - ", this.GetType().Name), this.CommonWeightOfProductByPieceForOneAnimal));
+            collector.Add(new Product(string.Format("{0} meat",this.GetType().Name),this.MeatAmount));
+            collector.Add(new Product(string.Format("{0} bacon", this.GetType().Name), this.BaconWeight));
+            collector.Add(new Product(string.Format("{0} round meat", this.GetType().Name), this.RoundMeatAmount));
+            collector.Add(new Product(string.Format("{0} offal", this.GetType().Name), this.OffalAmount));
+            collector.Add(new Product(string.Format("{0} product saled by piece common weight", this.GetType().Name), this.CommonWeightOfProductByPieceForOneAnimal));
 
             return collector;
         }
         public override List<Product>ProduceWaste()
         {
              List<Product> collectorW = new List<Product>();
-            collectorW.Add(new Product(string.Format("{0} waste - ",this.GetType().Name),this.WasteAmount));
+            collectorW.Add(new Product(string.Format("{0} waste",this.GetType().Name),this.WasteAmount));
             return collectorW;
         }
 

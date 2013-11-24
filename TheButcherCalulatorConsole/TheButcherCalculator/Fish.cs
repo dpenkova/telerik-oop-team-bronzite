@@ -43,9 +43,14 @@ namespace TheButcherCalculator
 
         //constructor
 
-        public Fish(string kind,int totalWeight):base(kind, totalWeight)
+        public Fish(string kind, double totalWeight)
+            :base(kind, totalWeight)
         {
            
+        }
+
+        public Fish()
+        { 
         }
 
         public override List<Product> ProduceGoods()

@@ -139,6 +139,8 @@ namespace TheButcherCalculator
             inputAminals.Add(new Turkey("Turkey", 6));
             inputAminals.Add(new Chicken("Chicken", 1.5));
             inputAminals.Add(new Duck("Duck", 4));
+            inputAminals.Add(new Fish("Fish", 16));
+            inputAminals.Add(new Crab("Crab", 1));
                         
             List<Product> producedGoods = new List<Product>();
             List<Product> producedWaste = new List<Product>();

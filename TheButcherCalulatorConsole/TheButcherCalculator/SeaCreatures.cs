@@ -13,8 +13,12 @@ namespace TheButcherCalculator
         public virtual double MeetAmount { get; protected set; }
 
         //constructor
-        protected SeaCreatures(string kind, int totalWeight)
+        protected SeaCreatures(string kind, double totalWeight)
             : base(kind, totalWeight)
+        { 
+        }
+
+        protected SeaCreatures()
         { 
         }
 
