@@ -7,6 +7,7 @@ namespace TheButcherCalculator
 {
     public abstract class Animal
     {
+        //just a test
         //fields
         private string kind;
         private double totalWeight;
