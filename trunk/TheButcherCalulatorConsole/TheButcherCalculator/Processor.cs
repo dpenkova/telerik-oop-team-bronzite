@@ -33,6 +33,7 @@ namespace TheButcherCalculator
             //List<Product> tempGoods = SumProducts(GoodsProduced);
             //this.GoodsProduced.Clear();
             //this.GoodsProduced = tempGoods;
+            // to be deleted
 
             this.GoodsProduced = SumProducts(GoodsProduced);
             this.WasteProduced = SumProducts(WasteProduced);
