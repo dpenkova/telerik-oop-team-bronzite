@@ -9,7 +9,6 @@ namespace TheButcherCalculator
     {
         public string Name { get; set; }
         public double ProductWeight { get; set; }
-        public string Kind { get; set; }
 
         public Product(string productName, double productWeight)
         {
