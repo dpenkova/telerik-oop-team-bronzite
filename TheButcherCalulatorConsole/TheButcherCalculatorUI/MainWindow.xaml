@@ -79,7 +79,7 @@
                     </ComboBox.Resources>
                 </ComboBox>
                 <TextBlock Grid.Column="2"
-                           Text="Weigh"
+                           Text="Weight"
                            FontSize="15"
                            TextAlignment="Center"
                            Margin="0,15,0,0"/>
