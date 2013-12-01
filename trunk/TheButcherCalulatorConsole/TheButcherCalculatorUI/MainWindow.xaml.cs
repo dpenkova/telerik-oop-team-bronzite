@@ -107,5 +107,15 @@ namespace TheButcherCalculatorUI
 
             this.ComboBoxAnimal.Text = "-- Select Animal --";
         }
+
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
+
+        private void OnCloseButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
