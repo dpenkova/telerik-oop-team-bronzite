@@ -23,7 +23,6 @@
     <Grid>
         <Image Name="imgBackground" Source="Pig.png" Stretch="Fill" />
         <Grid  Opacity="0.99">
-        
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="450"/>
             <ColumnDefinition />
@@ -56,15 +55,15 @@
                         Background="Pink"
                         Name="ButtonAdd"
                         Content="ADD" Click="OnAddButtonClick"/>
-                    <Button Grid.Row="5" 
+                    <Button Grid.Row="8" 
                         Background="Pink"
                         Name="ButtonClose"
                         Content="CLOSE" Click="OnCloseButtonClick"/>
-                    <Button Grid.Row ="7"
+                    <Button Grid.Row ="4"
                         Background="Pink"
                         Name="ButtonCalculate"
                         Content="CALCULATE" Click="OnCalculateButtonClick"/>
-                <Button Grid.Row ="8"
+                    <Button Grid.Row ="5"
                         Background="Pink"
                         Name="ButtonClear"
                         Content="CLEAR" Click="OnClearButtonClick"/>
