@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddAnimalException.cs" />
     <Compile Include="Animal.cs" />
     <Compile Include="Cow.cs" />
     <Compile Include="BirdsCattle.cs" />
