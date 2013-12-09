@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9C395F8A-18DD-4C39-8C1C-94760E766E66}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TheButcherCalculator</RootNamespace>
     <AssemblyName>TheButcherCalculator</AssemblyName>
@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,6 +53,7 @@
     <Compile Include="Enums.cs" />
     <Compile Include="Fish.cs" />
     <Compile Include="Crab.cs" />
+    <Compile Include="MainClass.cs" />
     <Compile Include="Pig.cs" />
     <Compile Include="FlocksAndHerds.cs" />
     <Compile Include="IProductable.cs" />
