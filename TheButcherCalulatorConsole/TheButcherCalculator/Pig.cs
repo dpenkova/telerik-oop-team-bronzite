@@ -61,7 +61,7 @@ namespace TheButcherCalculator
             collector.Add(new Product(string.Format("{0} bacon", this.GetType().Name), this.BaconWeight));
             collector.Add(new Product(string.Format("{0} round meat", this.GetType().Name), this.RoundMeatAmount));
             collector.Add(new Product(string.Format("{0} offal", this.GetType().Name), this.OffalAmount));
-            collector.Add(new Product(string.Format("{0} product saled by piece common weight", this.GetType().Name), this.CommonWeightOfProductByPieceForOneAnimal));
+            collector.Add(new Product(string.Format("{0} product by piece common weight", this.GetType().Name), this.CommonWeightOfProductByPieceForOneAnimal));
 
             return collector;
         }

@@ -45,7 +45,6 @@
     <Compile Include="Animal.cs" />
     <Compile Include="Cow.cs" />
     <Compile Include="BirdsCattle.cs" />
-    <Compile Include="CalculatorTest.cs" />
     <Compile Include="Chicken.cs" />
     <Compile Include="Duck.cs" />
     <Compile Include="Enums.cs" />
