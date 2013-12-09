@@ -9,19 +9,19 @@ namespace TheButcherCalculator
     {
         //constant percentiges
         
-        private const double wasteWeight = 0.82;
-        private const double meat = 0.18;
+        private const double WasteWeightPercentage = 0.82;
+        private const double MeatWeightPercentage= 0.18;
 
         // weight calculations for each product
 
         protected double WasteWeight
         {
-            get { return this.TotalWeight * wasteWeight; }
+            get { return this.TotalWeight * WasteWeightPercentage; }
         }
 
         protected double MeatWeight
         {
-            get { return this.TotalWeight * meat; }
+            get { return this.TotalWeight * MeatWeightPercentage; }
         }
 
         //constructor
