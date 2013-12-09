@@ -1,44 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace TheButcherCalculator
 {
     public class Fish : SeaCreatures
     {
         //constant percentiges
-        private const double head = 0.15;
-        private const double tailAndFlippers = 0.10;
-        private const double caviar = 0.02;
-        private const double wasteWeight = 0.15;
-        private const double meat = 0.58;
+        private const double HeadWeightPercentage = 0.15;
+        private const double TailAndFlippersPercentage = 0.10;
+        private const double CaviarWeightPercentage = 0.02;
+        private const double WasteWeightPercentage = 0.15;
+        private const double MeatWeightPercentage = 0.58;
 
         // weight calculations for each product
 
         protected double HeadWeight
         {
-            get { return this.TotalWeight * head; }
+            get { return this.TotalWeight * HeadWeightPercentage; }
         }
 
         protected double TailAndFlippersWeight
         {
-            get { return this.TotalWeight * tailAndFlippers; }
+            get { return this.TotalWeight * TailAndFlippersPercentage; }
         }
 
         protected double CaviarWeight
         {
-            get { return this.TotalWeight * caviar; }
+            get { return this.TotalWeight * CaviarWeightPercentage; }
         }
 
         protected double WasteWeight
         {
-            get { return this.TotalWeight * wasteWeight; }
+            get { return this.TotalWeight * WasteWeightPercentage; }
         }
 
         protected double MeatWeight
         {
-            get { return this.TotalWeight * meat; }
+            get { return this.TotalWeight * MeatWeightPercentage; }
         }
 
         //constructor
