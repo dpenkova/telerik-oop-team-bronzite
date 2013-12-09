@@ -18,14 +18,14 @@
   <Class Name="TheButcherCalculator.Product">
     <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABABAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Product.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheButcherCalculator.Processor">
     <Position X="0.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAACQgAAAAAEAAAAAAQAA=</HashCode>
+      <HashCode>AAIAAAAAAAAAEAAAAAAAAAAAACQgAAAAAEAAAAAAQAA=</HashCode>
       <FileName>Processor.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -47,7 +47,7 @@
   <Class Name="TheButcherCalculator.Fish">
     <Position X="11.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AACAAAAAgAAAAAAAEAAAAJEBEAAAAAIAQAAAAAAAgIA=</HashCode>
+      <HashCode>ABCAAAAAAAAAAAAAECAAAIEAEAAAAIIAAAQAAAAAgIA=</HashCode>
       <FileName>Fish.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -61,7 +61,7 @@
   <Class Name="TheButcherCalculator.Crab">
     <Position X="13.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AACAAAAAAAAAAAAAAAAAABEAEAAAAAIAAAAAAAAAgAA=</HashCode>
+      <HashCode>ABAAAAAAAAAAAAAAACAAAAEAEAAAAAIAAAAAAAAAgAA=</HashCode>
       <FileName>Crab.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -77,13 +77,6 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAEAAEAAAAAEAECQAAAAAAACAEAAAAAA=</HashCode>
       <FileName>Chicken.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="TheButcherCalculator.CalculatorTest" Collapsed="true">
-    <Position X="24.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
-      <FileName>CalculatorTest.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheButcherCalculator.BirdsCattle">
